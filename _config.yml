@@ -15,3 +15,5 @@ minima:
     github: cohoe
     facebook: grantcohoe
     instagram: grantcohoe
+header_pages:
+  - about.md
