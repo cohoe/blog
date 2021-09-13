@@ -1,5 +1,5 @@
 ---
-title: "Welcome to my blog"
+title: "Grant Cohoe Blog v3"
 ---
 
-I'm glad you are here. I plan to talk about ...
+Lets start again from the beginning.
