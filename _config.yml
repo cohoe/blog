@@ -7,8 +7,8 @@ twitter_username: grantcohoe
 github_username:  cohoe
 show_excerpts: true # set to false to remove excerpts on the homepage
 #theme: minima
-#remote_theme: jekyll/minima
-remote_theme: amitmerchant1990/reverie
+remote_theme: jekyll/minima
+#remote_theme: amitmerchant1990/reverie
 minima:
   skin: dark
   social_links:
@@ -18,3 +18,8 @@ minima:
     instagram: grantcohoe
 header_pages:
   - about.md
+# https://bartjolling.github.io/blog/2018/11/24/customizing-jekyll-minima-github-pages.html
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
