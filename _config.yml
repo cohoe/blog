@@ -10,3 +10,8 @@ show_excerpts: true # set to false to remove excerpts on the homepage
 remote_theme: jekyll/minima
 minima:
   skin: dark
+  social_links:
+    twitter: grantcohoe
+    github: cohoe
+    facebook: grantcohoe
+    instagram: grantcohoe
