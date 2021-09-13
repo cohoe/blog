@@ -7,3 +7,4 @@ twitter_username: grantcohoe
 github_username:  cohoe
 show_excerpts: true # set to false to remove excerpts on the homepage
 theme: minima
+  skin: dark
