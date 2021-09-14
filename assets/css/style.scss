@@ -1,0 +1,12 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+# https://github.com/jekyll/minima/blob/master/assets/css/style.scss
+# https://github.com/jekyll/minima/tree/v2.5.1
+# https://github.com/jekyll/minima/blob/v2.5.1/assets/main.scss
+---
+
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize",
+  "minima/syntax-highlighting"
+;
