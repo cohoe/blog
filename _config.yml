@@ -1,15 +1,13 @@
 title: Grant Cohoe
-author: cohoe
-email: grant@grantcohoe.com
-description: >
+author:
+  name: "Grant Cohoe"
+  email: "grant@grantcohoe.com"
+tagline: >
   Random tidbits and other nuggets of knowledge.
 twitter_username: grantcohoe
 github_username:  cohoe
-show_excerpts: true # set to false to remove excerpts on the homepage
-#theme: minima
-#remote_theme: jekyll/minima@v2.5.1
+show_excerpts: false
 remote_theme: jekyll/minima@3cdd14dff1216f561c68329e0b7420c2dc9b796a
-#remote_theme: amitmerchant1990/reverie
 minima:
   skin: dark
   social_links:
@@ -17,6 +15,8 @@ minima:
     github: cohoe
     facebook: grantcohoe
     instagram: grantcohoe
+    linkedin: grantcohoe
+paginate: 5
 header_pages:
   - about.md
 external_links:
@@ -24,8 +24,3 @@ external_links:
     url: 'https://www.grantcohoe.com'
   - title: Resume
     url: 'https://resume.grantcohoe.com'
-# https://bartjolling.github.io/blog/2018/11/24/customizing-jekyll-minima-github-pages.html
-#markdown: kramdown
-#kramdown:
-#  input: GFM
-#  syntax_highlighter: rouge
