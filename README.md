@@ -1,4 +1,8 @@
+Blog
+====
+
+To run locally:
 ```
+bundle install
 bundle exec jekyll serve
 ```
- https://github.com/jekyll/minima/issues/77

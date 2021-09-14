@@ -19,6 +19,11 @@ minima:
     instagram: grantcohoe
 header_pages:
   - about.md
+external_links:
+  - title: Home
+    url: 'https://www.grantcohoe.com'
+  - title: Resume
+    url: 'https://resume.grantcohoe.com'
 # https://bartjolling.github.io/blog/2018/11/24/customizing-jekyll-minima-github-pages.html
 #markdown: kramdown
 #kramdown:
