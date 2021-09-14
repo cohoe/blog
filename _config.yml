@@ -2,13 +2,13 @@ title: Grant Cohoe
 author: cohoe
 email: grant@grantcohoe.com
 description: >
-  Random tidbits and other nuggets of knowledge to share.
+  Random tidbits and other nuggets of knowledge.
 twitter_username: grantcohoe
 github_username:  cohoe
 show_excerpts: true # set to false to remove excerpts on the homepage
 #theme: minima
 #remote_theme: jekyll/minima@v2.5.1
-remote_theme: jekyll/minima
+remote_theme: jekyll/minima@3cdd14dff1216f561c68329e0b7420c2dc9b796a
 #remote_theme: amitmerchant1990/reverie
 minima:
   skin: dark
