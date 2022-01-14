@@ -2,7 +2,10 @@
 title: "Wildcard DNS Record with UniFi Network"
 date: 2022-01-14
 published: true
+categories: unifi docker dns traefik
 ---
+
+How I got a wildcard DNS record in my local network for rapidly deploying services using Traefik, and Docker Compose, and a UniFi Security Gateway.
 
 I use a [UniFi Security Gateway](https://www.ui.com/unifi-routing/usg/) as the core of my home network, which also acts as my local DNS resolver. I also use [Traefik](https://traefik.io/) as a convenient application router for any application stacks (services) I happen to be playing with. If I wanted to deploy some service with [Docker Compose](https://docs.docker.com/compose/) such as Grafana or even a dummy webapp I would have to:
 

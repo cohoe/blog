@@ -6,7 +6,7 @@ tagline: >
   Random tidbits and other nuggets of knowledge.
 twitter_username: grantcohoe
 github_username:  cohoe
-show_excerpts: false
+show_excerpts: true
 remote_theme: jekyll/minima@3cdd14dff1216f561c68329e0b7420c2dc9b796a
 minima:
   skin: dark
