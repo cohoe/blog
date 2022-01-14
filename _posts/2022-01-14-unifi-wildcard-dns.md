@@ -14,18 +14,18 @@ I use a [UniFi Security Gateway](https://www.ui.com/unifi-routing/usg/) as the c
 2.  Edit my UniFi `config.gateway.json` to add a static DNS record associating that name with the host IP.
     ```json
     {
-			"service": {
-				"dns": {
-					"forwarding": {
-						"options": [
-							"host-record=grafana.example.grantcohoe.com,169.254.169.254"
-						]
-					}
-				}
-			}
-		}
+      "service": {
+        "dns": {
+          "forwarding": {
+            "options": [
+              "host-record=grafana.example.grantcohoe.com,169.254.169.254"
+            ]
+          }
+        }
+      }
+    }
     ```
-		Note: This example has been simplied for brevity.
+    Note: This example has been simplied for brevity.
 
 3.  Trigger a Force Reprovision of my USG via the UniFi Controller to pick up the change and pray I didn't make a syntax error.
 
@@ -41,15 +41,15 @@ This is commonly done as a pattern with Kubernetes ingress controllers. Anywho..
 One line change and one final force reprovision were needed to make this work.
 ```json
 {
-	"service": {
-		"dns": {
-			"forwarding": {
-				"options": [
-					"address=/apps.example.grantcohoe.com/169.254.169.254"
-				]
-			}
-		}
-	}
+  "service": {
+    "dns": {
+      "forwarding": {
+        "options": [
+          "address=/apps.example.grantcohoe.com/169.254.169.254"
+        ]
+      }
+    }
+  }
 }
 ```
 
