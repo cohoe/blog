@@ -1,17 +1,19 @@
 ---
 title: "Wildcard DNS Record with UniFi Network"
 date: 2022-01-14
-published: false
+published: true
 ---
 
-I use a [UniFi Security Gateway](https://www.ui.com/unifi-routing/usg/) as the core of my home network, which also acts as my local DNS resolver. I also use [Traefik](https://traefik.io/) as a convenient application router for any application stacks (services) I happen to be playing with. If I wanted to deploy some service such as Grafana or even a dummy webapp I would have to:
+I use a [UniFi Security Gateway](https://www.ui.com/unifi-routing/usg/) as the core of my home network, which also acts as my local DNS resolver. I also use [Traefik](https://traefik.io/) as a convenient application router for any application stacks (services) I happen to be playing with. If I wanted to deploy some service with [Docker Compose](https://docs.docker.com/compose/) such as Grafana or even a dummy webapp I would have to:
 
 1.  Annotate my containers in a `docker-compose.yaml` appropriately to setup the HTTP listener.
     ```yaml
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.grafana.rule=Host(\`grafana.example.grantcohoe.com\`)"
+      - "traefik.http.routers.grafana.rule=Host('grafana.example.grantcohoe.com')"
     ```
+    Note: The backticks in this example have been replaced with single quotes due to a Github Pages Jekyll issue.
+
 2.  Edit my UniFi `config.gateway.json` to add a static DNS record associating that name with the host IP.
     ```json
     {
