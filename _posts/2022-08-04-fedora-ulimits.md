@@ -5,6 +5,8 @@ published: true
 categories: ulimits fedora linux systemd cinnamon
 ---
 
+To set ulimits on a Systemd host: Don't bother with PAM/limits.conf and simply set a custom config in user.conf.d or system.conf.d.
+
 Ulimits are resource limits imposed on processes and/or users. To do proper load testing on my workstation I needed to increase the
 number of allowed open files (`NOFILE`). There are two values at play: Soft and Hard limits. Soft limit is the artificial cap imposed
 by the kernel, but the user can kick it up to a maxmimum of a Hard limit. So for example you can temporarily kick up the amount of
@@ -42,4 +44,3 @@ DefaultLimitNOFILE=9001:1048576
 
 A quick reboot and all is well.
 
-In summary: To set ulimits on a Systemd host: Don't bother with PAM/limits.conf and set a custom config in user.conf.d or system.conf.d.
